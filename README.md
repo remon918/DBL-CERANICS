@@ -69,7 +69,7 @@ Based on the current architecture of the project:
 ## 🛠️ Installation
 
 ```
-git clone https://github.com/your-username/tiles-gallery.git
+git clone https://github.com/remon918/DBL-CERANICS
 cd tiles-gallery
 npm install
 npm run dev
