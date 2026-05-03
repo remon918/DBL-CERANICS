@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
       <p className="mt-6 font-semibold flex justify-between mx-10 md:mx-40">
         <span className="loading loading-ring loading-md"></span>
-        <span className="loading loading-ring loading-md"></span>
+        <span className="loading loading-ring loading-md"></span> 
       </p>
     );
   }
