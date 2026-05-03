@@ -1,7 +1,7 @@
 import TilesCard from "./TilesCard";
 
 const TilesPage = async () => {
-  const res = await fetch("http://localhost:3000//tiles.json");
+  const res = await fetch("http://localhost:3000/tiles.json");
   const tiles = await res.json();
   const topTiles = tiles.slice(0, 12);
   //   console.log(topTiles);

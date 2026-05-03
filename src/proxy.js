@@ -1,18 +1,18 @@
-
 import { NextResponse } from "next/server";
 import { auth } from "./lib/auth";
 
-
 export async function proxy(request) {
-    const session = await auth.api.getSession({
+  const session = await auth.api.getSession({
     headers: request.headers,
   });
-    if (session) {
-        return NextResponse.next();
-    }
-    return NextResponse.redirect(new URL('/signup', request.url))
+
+  if (!session) {
+    return NextResponse.redirect(new URL("/login", request.url));
+  }
+
+  return NextResponse.next();
 }
 
 export const config = {
-    matcher: ['/alltiles','/tiles/:path*']
+    matcher: ['/alltiles','/tiles/:path']
 }

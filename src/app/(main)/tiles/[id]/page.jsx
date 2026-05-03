@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 
 async function getTileDetails(id) {
-  const res = await fetch("http://localhost:3000//tiles.json", {
+  const res = await fetch("http://localhost:3000/tiles.json", {
     next: { revalidate: 1 },
   });
   const tiles = await res.json();
