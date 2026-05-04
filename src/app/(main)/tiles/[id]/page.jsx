@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 
 async function getTileDetails(id) {
-  const res = await fetch("https://dbl-ceranics.vercel.app/tiles.json", {
+  const res = await fetch("https://tiles-galerry-json-server.onrender.com/tiles", {
     next: { revalidate: 1 },
   });
   const tiles = await res.json();

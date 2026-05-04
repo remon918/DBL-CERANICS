@@ -2,7 +2,7 @@
 import TilesCard from "./TilesCard";
 
 const HomeTilesCards = async () => {
-  const res = await fetch("https://dbl-ceranics.vercel.app/tiles.json");
+  const res = await fetch("https://tiles-galerry-json-server.onrender.com/tiles");
   const tiles = await res.json();
   const topTiles = tiles.slice(0, 4);
   //   console.log(topTiles);
