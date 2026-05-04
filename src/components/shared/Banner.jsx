@@ -11,14 +11,14 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const tiles = [
-  { title: "Nano Crystal Polish", img: tile1, soldPerWeek: 455 },
+  { title: "Crystal Polish", img: tile1, soldPerWeek: 455 },
   { title: "Glazed Porcelain", img: tile2, soldPerWeek: 679 },
   { title: "Glossy Wall", img: tile3, soldPerWeek: 947 },
-  { title: "High Definition Relief", img: tile4, soldPerWeek: 856 },
-  { title: "Nano Crystal Polish", img: tile1, soldPerWeek: 312 },
+  { title: "High Relief", img: tile4, soldPerWeek: 856 },
+  { title: "Crystal Polish", img: tile1, soldPerWeek: 312 },
   { title: "Glazed Porcelain", img: tile2, soldPerWeek: 540 },
   { title: "Glossy Wall", img: tile3, soldPerWeek: 820 },
-  { title: "High Definition Relief", img: tile4, soldPerWeek: 715 },
+  { title: "High Relief", img: tile4, soldPerWeek: 715 },
 ];
 
 export default function Banner() {
