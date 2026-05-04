@@ -12,7 +12,7 @@ const TilesCard = ({ tiles }) => {
                  transition-all duration-300 ease-in-out 
                  hover:-translate-y-2 hover:shadow-md hover:bg-cyan-50 cursor-pointer"
       > 
-        <div className="relative w-full h-[180px] group overflow-hidden rounded-md">
+        <div className="relative w-full h-[140px] md:h-[190px] group overflow-hidden rounded-md">
           <Image
             className="object-cover transition-transform duration-500 group-hover:scale-110"
             src={image}
