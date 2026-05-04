@@ -1,10 +1,10 @@
 
 import TilesCard from "./TilesCard";
 
-const TilesPage = async () => {
+const HomeTilesCards = async () => {
   const res = await fetch("https://dbl-ceranics.vercel.app/tiles.json");
   const tiles = await res.json();
-  const topTiles = tiles.slice(0, 20);
+  const topTiles = tiles.slice(0, 4);
   //   console.log(topTiles);
   return (
     <div className="max-w-7xl mx-auto px-4">
@@ -27,4 +27,4 @@ const TilesPage = async () => {
   );
 };
 
-export default TilesPage;
+export default HomeTilesCards;
