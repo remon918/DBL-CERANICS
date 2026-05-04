@@ -1,6 +1,7 @@
 "use client";
 
 import ModalUpdate from "@/components/shared/ModalUpdate";
+import Navbar from "@/components/shared/Navbar";
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import React from "react";
@@ -20,6 +21,8 @@ const ProfilePage = () => {
   const user = session?.user;
 
   return (
+    <div className="">
+      <Navbar />
     <div className="min-h-[80vh] flex justify-center items-center bg-base-200 p-4">
       <div className="bg-base-100 shadow-xl rounded-2xl p-6 w-full max-w-sm text-center">
         {/* Avatar */}
@@ -67,6 +70,7 @@ const ProfilePage = () => {
         {/* Logout Button (optional) */}
         <ModalUpdate user ={user}/>
       </div>
+    </div>
     </div>
   );
 };

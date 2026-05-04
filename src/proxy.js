@@ -14,5 +14,5 @@ export async function proxy(request) {
 }
 
 export const config = {
-    matcher: ['/alltiles','/tiles/:path',]
+    matcher: ['/alltiles','/tiles/:path','/profile']
 }
