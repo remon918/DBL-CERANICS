@@ -14,14 +14,16 @@ const tiles = [
   { title: "Crystal Polish", img: tile1, soldPerWeek: 455 },
   { title: "Glazed Porcelain", img: tile2, soldPerWeek: 679 },
   { title: "Glossy Wall", img: tile3, soldPerWeek: 947 },
-  { title: "High Relief", img: tile4, soldPerWeek: 856 },
+  { title: "High Relief", img: tile4, soldPerWeek: 854 },
   { title: "Crystal Polish", img: tile1, soldPerWeek: 312 },
   { title: "Glazed Porcelain", img: tile2, soldPerWeek: 540 },
   { title: "Glossy Wall", img: tile3, soldPerWeek: 820 },
-  { title: "High Relief", img: tile4, soldPerWeek: 715 },
+  { title: "High Relief", img: tile4, soldPerWeek: 714 },
 ];
 
 export default function Banner() {
+
+
   return (
     <section className="py-10 bg-white">
       <h2 className="text-center text-xl md:text-2xl font-semibold mb-8 tracking-wide">
