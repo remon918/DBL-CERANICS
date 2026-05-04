@@ -99,7 +99,7 @@ export default function Banner() {
 
               <div className="w-8 h-[2px] bg-green-400 mx-auto my-2"></div>
 
-              <p className="text-gray-500 text-center text-[14px]" >{tile.soldPerWeek}<span className="text-xs">/sold per week</span> </p>
+              <p className="text-gray-500 text-center text-[14px]" >{tile.soldPerWeek}<span className="text-xs">/sold last week</span> </p>
             </div>
           </SwiperSlide>
         ))}
