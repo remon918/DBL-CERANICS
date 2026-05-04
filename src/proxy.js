@@ -1,3 +1,6 @@
+import dns from "node:dns";
+dns.setServers(['8.8.8.8', '8.8.4.4']);
+
 import { NextResponse } from "next/server";
 import { auth } from "./lib/auth";
 
@@ -14,5 +17,5 @@ export async function proxy(request) {
 }
 
 export const config = {
-    matcher: ['/alltiles','/tiles/:path']
+    matcher: ['/alltiles','/tiles/:path',]
 }
