@@ -1,5 +1,6 @@
 
-
+import Navbar from "@/components/shared/Navbar";
+import TilesPage from "@/components/shared/TilesPage";
 import Link from "next/link";
 import React from "react";
 import { FaArrowLeft } from "react-icons/fa";
@@ -12,6 +13,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
+      <Navbar />
       <Link
         href="/"
         className="inline-flex mt-6 items-center gap-2 text-sm font-semibold text-gray-700 hover:text-gray-900 hover:shadow-sm ml-6 md:ml-10 lg:ml-60"
@@ -19,7 +21,7 @@ const page = () => {
         <FaArrowLeft />
         Back to Home Page
       </Link>
-      {/* <TilesPage /> */}
+      <TilesPage />
     </div>
   );
 };
