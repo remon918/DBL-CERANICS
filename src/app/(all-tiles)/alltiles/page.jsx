@@ -1,5 +1,5 @@
 
-import TilesPage from "@/components/shared/TilesPage";
+
 import Link from "next/link";
 import React from "react";
 import { FaArrowLeft } from "react-icons/fa";
@@ -19,7 +19,7 @@ const page = () => {
         <FaArrowLeft />
         Back to Home Page
       </Link>
-      <TilesPage />
+      {/* <TilesPage /> */}
     </div>
   );
 };

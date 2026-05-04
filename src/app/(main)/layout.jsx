@@ -8,6 +8,7 @@ export const metadata = {
 const allLayout = ({ children }) => {
   return (
     <>
+      <Navbar />
       {children}
     </>
   );

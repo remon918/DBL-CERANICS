@@ -34,7 +34,7 @@ const DropDownMenu = () => {
             </NavLink>
           </li>
           <li className="border-b border-gray-700">
-            <NavLink href={"/my-tiles"} onClick={() => setMenuOpen(false)}>
+            <NavLink href={"/tiles-cart"} onClick={() => setMenuOpen(false)}>
               <span className="block px-4 py-3 text-sm text-gray-900 hover:bg-purple-500/20">
                 Tiles Cart
               </span>
