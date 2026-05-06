@@ -1,28 +1,41 @@
+"use client";
 
+import { useState } from "react";
 import TilesCard from "./TilesCard";
+import Link from "next/link";
 
-const TilesPage = async () => {
-  const res = await fetch("https://tiles-galerry-json-server.onrender.com/tiles");
-  const tiles = await res.json();
-  const topTiles = tiles.slice(0, 20);
-  //   console.log(topTiles);
+const TilesPage = ({ tiles }) => {
+  const [search, setSearch] = useState("");
+
+  const filteredTiles = tiles.filter((tile) =>
+    tile.title.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <div className="max-w-7xl mx-auto px-4">
-      <div className="flex items-center justify-center gap-4 my-8 md:my-15">
-        <div className="h-[1px] w-10 md:w-93 bg-gray-300"></div>
-
-        <h2 className="text-lg md:text-2xl font-semibold tracking-widest text-gray-800">
-          Explore Our Tiles <br />{" "}
-          <span className="text-center flex justify-center">Collection</span>
-        </h2>
-
-        <div className="h-[1px] w-10 md:w-93 bg-gray-300"></div>
-      </div>
       
+      {/* Top bar */}
+      <div className="flex items-center justify-between my-6">
+        
+        {/* Back button */}
+        <Link href="/" className="text-gray-600 font-medium hover:border-b-2 border-gray-300">
+          ← Back to Home
+        </Link>
+
+        {/* Search input */}
+        <input
+          type="text"
+          placeholder="Search tiles..."
+          className="border px-4 py-2 rounded-md w-60 md:w-80 outline-none border-gray-300 focus:ring-2 focus:ring-purple-500"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
+
+      {/* Tiles Grid */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 p-2">
-        {topTiles.map((tiles) => (
-          <TilesCard key={tiles.id} tiles={tiles} />
+        {filteredTiles.map((tile) => (
+          <TilesCard key={tile.id} tiles={tile} />
         ))}
       </div>
     </div>
