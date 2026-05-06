@@ -26,9 +26,17 @@ export default function Banner() {
 
   return (
     <section className="py-10 bg-white">
-      <h2 className="text-center text-xl md:text-2xl font-semibold mb-8 tracking-wide">
-        TOP SELLING TILES
-      </h2>
+      <div className="flex items-center justify-center gap-4 my-8 md:my-15">
+        <div className="h-[1px] w-10 md:w-93 bg-gray-300"></div>
+
+        <h2 className="text-lg md:text-2xl font-semibold tracking-widest text-gray-800">
+          Top Celling Tiles
+        </h2>
+
+        <div className="h-[1px] w-10 md:w-93 bg-gray-300"></div>
+
+
+      </div>
 
       <div className="max-w-7xl mx-auto px-4">
         <Swiper
